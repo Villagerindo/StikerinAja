@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="<%= currentLang %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stikerinaja API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><%= lang.title %></h1>
+        <nav>
+            <a href="/?lang=<%= currentLang %>">Home</a>
+            |
+            <a href="/docs?lang=en">English</a> | <a href="/docs?lang=id">Bahasa Indonesia</a>
+        </nav>
+    </header>
+    <p>Base URL: <code><%= baseUrl %></code></p>
+
+    <h2><%= lang.upload_image_or_video %></h2>
+    <p>Method: <code>POST</code></p>
+    <p>Endpoint: <code>/upload</code></p>
+    <p><%= lang.endpointDesc %></p>
+
+    <h3>Request</h3>
+    <p>Headers:</p>
+    <pre><code>Content-Type: multipart/form-data</code></pre>
+    
+    <p>Body:</p>
+    <pre><code>
+{
+    "file": "your_file.jpg" // or "your_file.mp4"
+}
+    </code></pre>
+
+    <h3>Response</h3>
+    <p><%= lang.fetch_callback %></p>
+
+    <hr>
+
+    <h2><%= lang.url_upload %></h2>
+    <p>Method: <code>GET</code></p>
+    <p>Endpoint: <code>/?url=url</code></p>    
+    <p><%= lang.endpointDesc2 %></p>
+
+    <h3>Request</h3>
+    <p>Parameter:</p>
+    <pre><code>
+?url=https://example.com/your_image_or_video.jpg // or .mp4
+    </code></pre>
+
+    <h3>Response</h3>
+    <p>The callback is an image that can be fetched</p>
+</body>
+</html>

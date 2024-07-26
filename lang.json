@@ -1,0 +1,27 @@
+{
+    "en": {
+      "title": "WhatsApp Sticker Creation RestAPI",
+      "description": "Welcome to our WhatsApp Sticker API service. You can easily create WhatsApp stickers by uploading images or using image URLs. Full documentation is available on the Docs page.",
+      "docs": "Docs",
+      "upload_image_or_video": "1. Upload Image or Video",
+      "endpointDesc": "Upload an image or video file using this endpoint. The file will be converted to WEBP as a response.",
+      "endpointDesc2": "Upload an image or video by providing it's URL as a parameter. The file will be converted to WEBP as a response.",
+      "fetch_callback": "The callback is an WEBP that can be fetched",
+      "url_upload": "2. Upload Image or Video via URL",
+      "parameters": "Parameters",
+      "language": "Language",
+      "select_language": "Select Language"
+    },
+    "id": {
+      "title": "RestAPI Pembuat Stiker Whatsapp",
+      "description": "Selamat datang di layanan RestApi kami yang memungkinkan Anda membuat stiker WhatsApp dengan mudah dan cepat. Anda dapat mengunggah gambar langsung atau menggunakan URL gambar untuk membuat stiker. Dokumentasi lengkap tersedia pada halaman Docs.",
+      "docs": "Dokumentasi",
+      "upload_image_or_video": "1. Unggah Gambar atau Video",
+      "endpointDesc": "Unggah file gambar atau video menggunakan endpoint ini. File tersebut akan dikonversi ke WEBP sebagai respon.",
+      "endpointDesc2": "Unggah file gambar atau video dengan memberikan URL-nya sebagai parameter. File tersebut akan dikonversi ke WEBP sebagai respon.",
+      "fetch_callback": "Callbacknya adalah file WEBP yang dapat difetch",
+      "url_upload": "2. Unggah Gambar atau Video melalui URL",
+      "language": "Bahasa",
+      "select_language": "Pilih Bahasa"
+    }
+  }
